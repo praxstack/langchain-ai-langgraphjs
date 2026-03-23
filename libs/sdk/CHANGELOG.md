@@ -1,5 +1,11 @@
 # @langchain/langgraph-sdk
 
+## 1.8.1
+
+### Patch Changes
+
+- [#2237](https://github.com/langchain-ai/langgraphjs/pull/2237) [`88726df`](https://github.com/langchain-ai/langgraphjs/commit/88726dfe222aed64e5cd5dfa6f77f886b5a0d205) Thanks [@christian-bromann](https://github.com/christian-bromann)! - Extract shared `WithClassMessages<T>` type to `@langchain/langgraph-sdk/ui`
+
 ## 1.8.0
 
 ### Minor Changes
