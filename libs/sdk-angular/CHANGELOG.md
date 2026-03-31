@@ -1,5 +1,11 @@
 # @langchain/angular
 
+## 0.3.2
+
+### Patch Changes
+
+- [#2253](https://github.com/langchain-ai/langgraphjs/pull/2253) [`76a0a94`](https://github.com/langchain-ai/langgraphjs/commit/76a0a94ff5eb87419e33dc3f9911a1b12ef1d6d7) Thanks [@christian-bromann](https://github.com/christian-bromann)! - Angular event callback tests
+
 ## 0.3.1
 
 ### Patch Changes
