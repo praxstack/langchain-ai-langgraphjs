@@ -1,5 +1,11 @@
 # @langchain/langgraph-checkpoint-redis
 
+## 1.0.9
+
+### Patch Changes
+
+- [#2525](https://github.com/langchain-ai/langgraphjs/pull/2525) [`829a32a`](https://github.com/langchain-ai/langgraphjs/commit/829a32a30cc22103b1cb0aba6a027b7ccdb68447) Thanks [@lhlyu](https://github.com/lhlyu)! - Fix Redis checkpoint pending write deserialization when a write document has no `value` field. RedisJSON omits `undefined` values, so `loadPendingWrites` now restores a missing `value` as `undefined` instead of passing it through JSON parsing.
+
 ## 1.0.8
 
 ### Patch Changes
