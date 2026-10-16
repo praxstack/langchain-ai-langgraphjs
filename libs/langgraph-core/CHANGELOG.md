@@ -1,5 +1,15 @@
 # @langchain/langgraph
 
+## 1.5.1
+
+### Patch Changes
+
+- [#3017](https://github.com/langchain-ai/langgraphjs/pull/3017) [`61b0049`](https://github.com/langchain-ai/langgraphjs/commit/61b00495dd13da035d6c92a68f3294f60ca54bd7) Thanks [@eliornl](https://github.com/eliornl)! - A field that changes from a DeltaChannel to a plain reducer, for example to `MessagesAnnotation`, keeps its value on threads written under the DeltaChannel: reads rebuild it from the stored writes instead of returning the empty default, and the next run adds to it instead of replacing it.
+
+- [#3038](https://github.com/langchain-ai/langgraphjs/pull/3038) [`bc01023`](https://github.com/langchain-ai/langgraphjs/commit/bc010237d9904bedf411c965d14343222e300d74) Thanks [@eliornl](https://github.com/eliornl)! - `messagesStateReducer` and `messagesDeltaReducer` store message chunks as their non-chunk class, as Python's `add_messages` does. A graph run with `streamMode: "messages"` or `streamEvents` now checkpoints the same `AIMessage` as `invoke`, without a duplicate `tool_call_chunks` copy of every tool call, and an in-place edit to `tool_calls` (for example a rejected call in `humanInTheLoopMiddleware`) is no longer undone when the thread is reloaded.
+- Updated dependencies [[`2e1fe5b`](https://github.com/langchain-ai/langgraphjs/commit/2e1fe5b3fffd87b2f7ba260da3726a2c03c2f72f), [`0acf88d`](https://github.com/langchain-ai/langgraphjs/commit/0acf88db9fdc6441c8b3a162b7a328b9b91e115e), [`9cc54cc`](https://github.com/langchain-ai/langgraphjs/commit/9cc54cce575ae00deb0bb5946aa457f44f485427)]:
+  - @langchain/langgraph-sdk@1.12.5
+
 ## 1.5.0
 
 ### Minor Changes
