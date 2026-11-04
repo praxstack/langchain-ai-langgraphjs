@@ -1,5 +1,11 @@
 # @langchain/langgraph-sdk
 
+## 1.12.11
+
+### Patch Changes
+
+- [#3204](https://github.com/langchain-ai/langgraphjs/pull/3204) [`2f42fb1`](https://github.com/langchain-ai/langgraphjs/commit/2f42fb196d840931f11a4da114f030f3ba4a90fe) Thanks [@sera-wi](https://github.com/sera-wi)! - `ThreadsClient.getState` and `ThreadsClient.getHistory` accept a `select` option to return only some fields, e.g. `select: ["values.messages"]` to read a single state key. Exports the new `ThreadStateSelectField` type and the existing `ThreadSelectField` type from the package root.
+
 ## 1.12.10
 
 ### Patch Changes
